@@ -3,3 +3,6 @@
 --> Add 'restframework' in the installed app section to use rest framework in Django app.
 --> The basic imports are api_view & response from rest_framework & api_view is the decorator used to specify the type of request GET, POST or DELETE.
 --> The function based view with api_view decorator contains any json data can be returned as response through the views.py file.
+--> Now to use the data from Db in json format, serialize it by creating serializer.py file.
+--> Import serializers from rest_framework & create a class that inherits from serializers.ModelSerializer & specify the class Meta to mention model and fields.(Similar to forms.py)
+--> In views.py file, query the data from DB as usual & store it in variable, then pass the variable to the Serializer class (Mention "many" True if multiple data or False if it is single data) & return the serializer Response.
