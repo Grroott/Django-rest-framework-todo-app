@@ -1,0 +1,5 @@
+--> Install Django & create a simple app Task, register in admin site, create super user.
+--> Install django restframework
+--> Add 'restframework' in the installed app section to use rest framework in Django app.
+--> The basic imports are api_view & response from rest_framework & api_view is the decorator used to specify the type of request GET, POST or DELETE.
+--> The function based view with api_view decorator contains any json data can be returned as response through the views.py file.
